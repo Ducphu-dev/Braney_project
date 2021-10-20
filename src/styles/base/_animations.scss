@@ -1,0 +1,97 @@
+@keyframes rotateAround3Item1 {
+  0%{
+    stroke-width: 0;
+  }
+  65%{
+    stroke-width: 0.3;
+  }
+  70%{
+    stroke-width: 0.7;
+  }
+  80%{
+    stroke-width: 0.75;
+  }
+  90%{
+    stroke-width: 0.7;
+  }
+  95%{
+    stroke-width: 0.3;
+  }
+  100%{
+    stroke-width: 0;
+  }
+} 
+
+@keyframes rotate360deg {
+  to{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes hoverBox {
+    0%{
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    100%{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        opacity: 0.5;
+    }
+} 
+
+@keyframes StrokeLineDown{
+  0%{
+    stroke-dashoffset:0
+  }
+  100%{
+    stroke-dashoffset:-200
+  }
+}
+@keyframes StrokeLineUp{
+  0%{
+    stroke-dashoffset:0
+  }
+  100%{
+    stroke-dashoffset:200
+  }
+}
+
+@keyframes bounceInBottom{
+  0%{
+    opacity:0;
+    transform:translate3d(0,-700px,0)
+  }
+  75%{
+    opacity:1;transform:translate3d(0,-25px,0)
+  }
+  80%{
+    transform:translate3d(0,5px,0)
+  }
+  90%{
+    transform:translate3d(0,-5px,0)
+  }
+  to{
+    transform:translateZ(0);opacity:1
+  }
+}
+
+@keyframes bounceOpacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+// @keyframes moveLeft{
+//     0%{
+//         transform: translateX(-100%);
+//     }
+//     50%{
+//         transform: translateX(-50%);
+//     }
+//     100%{
+//         transform: translateX(0%);
+//     }
+// }

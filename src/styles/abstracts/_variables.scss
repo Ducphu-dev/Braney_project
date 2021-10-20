@@ -1,0 +1,158 @@
+$family: (
+	primary: 'Barlow',
+	// second: "Be+Vietnam"
+);
+
+$color: (
+	main: #4E8848,
+	main-second:#91C73E,
+
+	white: #ffff,
+	black: #0000,
+	
+	black-1:#363636,
+	black-2:#292929,
+	black-3:#1C1C1C,
+
+	grey: #707070,
+
+
+);
+
+$shadow:(
+	s1: 0 3px 6px rgba(0,0,0,.16),
+);
+
+
+// dùng rem (1 rem = 10px)
+// Cách sử dụng: @include size(s12); --> sử dụng biến s12
+// ----> tương đương với font-size: 1.2rem;
+// 1920 -> 10px -> 1 rem = 10px
+
+$size: (
+	s32: (
+		default: 3.2rem,
+	),
+	s24: (
+		default: 2.4rem,
+	),
+	s20: (
+		default: 2rem,
+	),
+	s18: (
+		default: 1.8rem,
+	),
+	s16: (
+		default: 1.6rem,
+	),
+);
+
+$title: (
+	s74: (
+		default: 7.4rem,
+	),
+	s40: (
+		default: 4rem,
+	),
+	
+);
+
+$lineHeight:(
+	
+);
+
+// Cách sử dụng: map-get($media, ps);
+// Hoặc là: @include rp(ps);
+$media: (
+	// personal computer
+	px: 1920px,
+	pl: 1680px,
+	pm: 1440px,
+	ps: 1336px,
+	// tablet
+	tx: 1280px,
+	tl: 1024px,
+	tm: 900px,
+	ts: 768px,
+	// mobile
+	mx: 640px,
+	ml: 540px,
+	mm: 480px,
+	ms: 384px,
+	// mobile small
+	sx: 360px,
+	sl: 320px
+);
+
+// Cách sử dụng: Không tùy chỉnh trong đây (phần này mặc định)
+// kích thước 1183px (grid layout)
+$container-max-widths: (
+	// fullpage
+	default: 1640px,
+	// default: 1640px,
+	pl:90%,
+	// 1336px
+	// default: 1183px,
+	// tx: 860px,
+	// tm: 94%,
+);
+
+// kích thước 1256px (grid layout)
+// $container-max-widths: (
+// 	default: 1256px,
+// 	ps: 960px,
+// 	tl: 96%,
+// 	// pm: 1200px,
+// 	// tx: 960px,
+// 	// tl: 96%,
+// 	// về talet thì sẽ width = 96%;
+// );
+
+// Cách sử dụng: @include block(banner, margin, 20px); --> sử dụng biến s12
+// tham số 1: tên key trong block
+// tham số 2: thuộc tính cần gán
+// tham số 3: (có thể bỏ qua) còn nếu có thì sẽ là
+//				giá trị trái phải như của margin or padding
+// ----> tương đương với margin: 1080px 20px;
+$block: (
+	pagiSwiper: (
+		default: 43px,
+	),
+
+	swiperBtn: (
+		default: 42px,
+		ts: 36px,
+		ml: 32px,
+	),
+);
+
+// Cách sử dụng: @include space(s134, margin, 20px); --> sử dụng biến s12
+// tham số 1: tên key trong block
+// tham số 2: thuộc tính cần gán
+// tham số 3: (có thể bỏ qua) còn nếu có thì sẽ là
+//				giá trị trái phải như của margin or padding
+// ----> tương đương với margin: 1080px 20px;
+// y như block
+// chú ý khi khoảng cách giống nhau nhưng media khác nhau thì có thể thêm đằng sau là -2 -3 (loại 2 loại 3)
+
+$space: (
+	
+	// // Khoảng cách ngoài của section
+	// s80: (
+	// 	default: 80px,
+	// 	pm: 64px,
+	// 	tl: 56px,
+	// 	mx: 40px,
+	// 	mm: 32px,
+	// ),
+
+);
+
+
+
+
+///////////////////// LAYOUT ////////////////////////////
+
+
+///////////////////// PAGE ////////////////////////////
+@import "../_variables/index";

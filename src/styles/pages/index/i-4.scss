@@ -1,0 +1,190 @@
+#brn-index-4{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .brn-index-4{
+        &__wrapper{
+            margin-bottom: 40px;
+            &--intro{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-bottom: 75px;
+                &_title{
+                    @include bold;
+                    @include title(s74);
+                }
+                &_decs{
+                    @include size(s24);
+                    line-height: 29px;
+                }
+            }
+            &--project{
+                width: 100%;
+                margin-top: 50px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    top: -75px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    content: "";
+                    background-color: map-get($color, main );
+                }
+                .nav-custom{
+                    margin: 0 -10px;
+                    .swiper-container{
+                        padding: 10px;
+                        .swiper-slide-active{
+                            .btn-see-more{
+                                @include bold;
+                                &::before{
+                                    animation: slide .3s ease-in-out 1;
+                                //    animation-direction: reverse;
+                                    width: 0;
+                                }
+                                
+                                svg{
+                                    opacity: 1;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                    .nav{
+                        margin-top: 40px;
+                        display: flex;
+                        align-items: center;
+                        // width: 100%;
+                        padding: 0 10px;
+                        position: absolute;
+                        right: 0;
+                        .swiper-button-next,.swiper-button-prev{
+                            position: unset;
+                            // top: 100%;
+                            width: auto;
+                            left: unset;
+                            right: unset;
+                            margin-right: 20px;
+                            // margin-left: auto;
+                            &::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                &_items{
+                    // padding: 20px;
+                    width: 100%;
+                    padding-bottom: 90%;
+                    position: relative;
+                    cursor: pointer;
+                    overflow: hidden;
+                    transition: .2s ease-in-out;
+                    .items{
+                        // padding: 30px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .items-header{
+                            width: 100%;
+                            padding-bottom: 55%;
+                            position: relative;
+                            img{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                            }
+                        }
+                        .items-main{
+                            display: flex;
+                            align-items: center;
+                            &__name{
+                                
+                                @include size(s32);
+                                color: map-get($color, black-3 );
+                                @include p-line-clamp(1)
+                            }
+                            &__sub{
+                                margin-left: auto;
+                                @include size(s24);
+                                color: map-get($color,main );
+                                @include p-line-clamp(1)
+                            }
+                        }
+                        .items-footer {
+                            display: inline-flex;
+                            .btn-see-more{
+                                @include size(s24);
+                                color: map-get($color, main);
+                                // @include bold;
+                                position: relative;
+                                padding-left: 7rem;
+                                display: inline-flex;
+                                transition: .2s ease-in-out;
+                                padding: 10px 0;
+                                &::before{
+                                    position: absolute;
+                                    top: 60%;
+                                    left: 0;
+                                    content: "";
+                                    width: 5.6rem;
+                                    height: 1px;
+                                    background-color:  map-get($color, main);
+                                }
+                                svg{
+                                    position: absolute;
+                                    top: 60%;
+                                    left: -2rem;
+                                    transform: translateY(-50%);
+                                    opacity: 0;
+                                    transition: .2s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .items{
+                            .items-footer {
+                                .btn-see-more{
+                                    
+                                    @include bold;
+                                    &::before{
+                                       animation: slide .3s ease-in-out 1;
+                                    //    animation-direction: reverse;
+                                       width: 0;
+                                    }
+                                   
+                                    svg{
+                                        transition-delay: .4s;
+                                        opacity: 1;
+                                        left:0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @keyframes slide {
+                        0%{
+                            width:  0;
+                        }
+                        100%{
+                            width: 5.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

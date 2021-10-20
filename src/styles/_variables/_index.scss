@@ -1,0 +1,94 @@
+$index-3-space: (
+ s32:(
+     default: 32px,
+     pm: 24px,
+ ),
+
+ s44:(
+    default: 44px,
+    pm: 36px,
+),
+);
+$index-6-space: (
+ s32:(
+     default: 32px,
+     pm: 24px,
+ ),
+ s42:(
+     default: 42px,
+     pm: 32px,
+ ),
+
+
+
+);
+$index-9-space: (
+ s160:(
+    default: 160px,
+    
+ )
+);
+@mixin index-3-space($key, $name, $side: "-1") {
+    @each $idx, $val in map-get($index-3-space, #{$key}) {
+      @if $side == "-1" {
+        @if $idx == default {
+          #{$name}: $val;
+        } @else {
+          @media (max-width: map-get($media, $idx)) {
+            #{$name}: $val;
+          }
+        }
+      } @else {
+        @if $idx == default {
+          #{$name}: $val $side;
+        } @else {
+          @media (max-width: map-get($media, $idx)) {
+            #{$name}: $val $side;
+          }
+        }
+      }
+    }
+  }
+@mixin index-6-space($key, $name, $side: "-1") {
+    @each $idx, $val in map-get($index-6-space, #{$key}) {
+      @if $side == "-1" {
+        @if $idx == default {
+          #{$name}: $val;
+        } @else {
+          @media (max-width: map-get($media, $idx)) {
+            #{$name}: $val;
+          }
+        }
+      } @else {
+        @if $idx == default {
+          #{$name}: $val $side;
+        } @else {
+          @media (max-width: map-get($media, $idx)) {
+            #{$name}: $val $side;
+          }
+        }
+      }
+    }
+}
+@mixin index-9-space($key, $name, $side: "-1") {
+    @each $idx, $val in map-get($index-9-space, #{$key}) {
+      @if $side == "-1" {
+        @if $idx == default {
+          #{$name}: $val;
+        } @else {
+          @media (max-width: map-get($media, $idx)) {
+            #{$name}: $val;
+          }
+        }
+      } @else {
+        @if $idx == default {
+          #{$name}: $val $side;
+        } @else {
+          @media (max-width: map-get($media, $idx)) {
+            #{$name}: $val $side;
+          }
+        }
+      }
+    }
+}
+
