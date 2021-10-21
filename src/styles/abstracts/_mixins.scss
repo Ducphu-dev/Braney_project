@@ -113,61 +113,61 @@
   }
 }
 
-@mixin h1{
-  @include title(h1);
-  @include bold;
-  @include lineHeight(h1);
-  letter-spacing: 0.1px;
-}
-@mixin h2{
-  @include title(h2);
-  @include medium;
-  @include lineHeight(h2);
-  letter-spacing: 1%;
-}
-@mixin h3{
-  @include title(h3);
-  @include medium;
-  @include lineHeight(h3);
-  letter-spacing: 0.1%;
-}
-@mixin h4{
-  @include title(h4);
-  @include medium;
-  @include lineHeight(h4);
-  letter-spacing: 0.15px;
-}
-@mixin h5{
-  @include title(h5);
-  @include medium;
-  @include lineHeight(h5);
-  letter-spacing: 2%;
-}
+// @mixin h1{
+//   @include title(h1);
+//   @include bold;
+//   @include lineHeight(h1);
+//   letter-spacing: 0.1px;
+// }
+// @mixin h2{
+//   @include title(h2);
+//   @include medium;
+//   @include lineHeight(h2);
+//   letter-spacing: 1%;
+// }
+// @mixin h3{
+//   @include title(h3);
+//   @include medium;
+//   @include lineHeight(h3);
+//   letter-spacing: 0.1%;
+// }
+// @mixin h4{
+//   @include title(h4);
+//   @include medium;
+//   @include lineHeight(h4);
+//   letter-spacing: 0.15px;
+// }
+// @mixin h5{
+//   @include title(h5);
+//   @include medium;
+//   @include lineHeight(h5);
+//   letter-spacing: 2%;
+// }
 
-@mixin body1{
-  @include size(body1);
-  @include regular;
-  @include lineHeight(body1);
-  letter-spacing: 1%;
-}
-@mixin body2{
-  @include size(body2);
-  @include regular;
-  @include lineHeight(body2);
-  letter-spacing: 0.1%;
-}
-@mixin sub2{
-  @include size(sub2);
-  @include regular;
-  @include lineHeight(sub2);
-  letter-spacing: 0.1px;
-}
-@mixin button1{
-  @include size(button1);
-  @include medium;
-  @include lineHeight(button1);
-  letter-spacing: 1%;
-}
+// @mixin body1{
+//   @include size(body1);
+//   @include regular;
+//   @include lineHeight(body1);
+//   letter-spacing: 1%;
+// }
+// @mixin body2{
+//   @include size(body2);
+//   @include regular;
+//   @include lineHeight(body2);
+//   letter-spacing: 0.1%;
+// }
+// @mixin sub2{
+//   @include size(sub2);
+//   @include regular;
+//   @include lineHeight(sub2);
+//   letter-spacing: 0.1px;
+// }
+// @mixin button1{
+//   @include size(button1);
+//   @include medium;
+//   @include lineHeight(button1);
+//   letter-spacing: 1%;
+// }
 
 
 //////////// FONT SIZE ////////////////////////

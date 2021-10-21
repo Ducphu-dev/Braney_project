@@ -27,6 +27,7 @@ import {pagepiling} from "./components/pagepiling";
 // import {gsaplib} from "./components/gsap";
 import {services} from "./layout/services";
 import {project} from "./layout/project";
+import {process} from "./layout/process";
 
 // Layout
 import aniGsap from './components/gsap';
@@ -55,6 +56,7 @@ function page(){
   services();
   // index();
   project();
+  process();
 }
 
 

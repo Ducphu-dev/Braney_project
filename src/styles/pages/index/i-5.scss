@@ -1,0 +1,192 @@
+#brn-index-5{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    .brn-index-5{
+        height: 100vh;
+        width: 100%;
+        &__wrapper{
+            height: 100%;
+            align-items: center;
+            &--process{
+                &__title{
+                    @include bold;
+                    @include title(s74);
+                    margin-bottom: 30px;
+                }
+                &__list{
+                    width: 100%;
+                    padding-bottom: 67%;
+                    overflow-Y: scroll;
+                    position: relative;
+                    &::-webkit-scrollbar {
+                        display: none;
+                      }
+                    &-items{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        ol {
+                            padding-inline-start: 40px;
+                            @include size(s32);
+                            color: map-get($color, black-2 );
+                            li{
+                                .items{
+                                   
+                                    &-name{
+                                        cursor: pointer;
+                                        padding: 25px 0;
+                                        display: flex;
+                                        align-items: center;
+                                        span{
+                                            width: 18px;
+                                            height: 18px;
+                                            border-radius: 50%;
+                                            background: linear-gradient(180deg, rgba(146,214,101,1) 0%, rgba(0,67,63,1) 100%);
+                                            content: "";
+                                            transition: .2s ease-in-out;
+                                            margin-left: auto;
+                                        }
+                                        position: relative;
+                                    
+                                        &::after{
+                                            position: absolute;
+                                            top:  100%;
+                                            left: -40px;
+                                            width: calc(100% + 40px);
+                                            height: 1px;
+                                            background-color: map-get($color,main );
+                                            content: "";
+                                        }
+                                    }
+                                    &.active{
+                                        .items-name span{
+                                            width: 18px;
+                                            height: 6px;
+                                            border-radius: 10px;
+                                            // background: map-get($color, main-second );
+                                            animation: rotate .3s ease-in-out;
+                                            @keyframes rotate {
+                                                0%{
+                                                    transform:  rotate(90deg);
+                                                }
+                                                100%{
+                                                    transform:  rotate(0);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &>*{
+                                        @include size(s32);
+                                        color: map-get($color, black-2 );
+                                    }
+                                    &-infor{
+                                        padding-left: -40px;
+                                        padding: 0;
+                                        @include size(s20);
+                                        color: map-get($color, black-1 );
+                                        position: relative;
+                                        max-height: 0;
+                                        overflow: hidden;
+                                        margin-left: -40px;
+                                        transition: .4s ease-in-out;
+                                        &.active{
+                                            max-height: 300px;
+                                            overflow-Y: scroll;
+                                            &::-webkit-scrollbar {
+                                                display: none;
+                                              }
+                                        }
+                                        &>*{
+                                            padding: 30px 0;
+                                        }
+                                        &::after{
+                                            position: absolute;
+                                            top:  99%;
+                                            left: -40px;
+                                            width: calc(100% + 40px);
+                                            height: 1px;
+                                            background-color: map-get($color,main );
+                                            content: "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &--project{
+                display: flex;
+                justify-content: flex-end;
+                .svg{
+                    position: relative;
+                    svg{
+                        position: relative;
+                        z-index: 2;
+                    }
+                    .circle{
+                        z-index: 1;
+                        position: absolute;
+                        top: -30%;
+                        right: 30px;   
+                        width: 35%;
+                        animation: flow 4s linear infinite;
+                        // transform: translateX(1440px) translateY(220px) ;
+                        @keyframes flow {
+                            0%{
+                                transform:rotate(0deg)
+                                          translate(-35px)
+                                          rotate(0deg);
+                              
+                              }
+                              100%{
+                                transform:rotate(360deg)
+                                          translate(-35px)
+                                          rotate(-360deg);
+                              }
+                        }
+                    }
+                }
+                // svg{
+                //     #Group_5095{
+                //         position: relative;
+                //         #cricle{
+                //             position: absolute;
+                //             top: 0;
+                //             right: 0;
+                //             // transform: translate(1565.021px, 213.159px);
+                //             animation: flow 4s ease-in-out infinite;
+                //             // transform: translateX(1440px) translateY(220px) ;
+                //             @keyframes flow {
+                //                 0%{
+                //                     transform: translateX(1440px) translateY(220px) ;
+                                              
+                //                 }
+                //                 25%{
+                //                     transform:translateX(1480px) translateY(220px) ;
+                                            
+                //                 }
+                //                 40%{
+                //                     transform:translateX(1480px) translateY(240px);
+                                            
+                //                 }
+                //                 85%{
+                //                     transform:translateX(1460px) translateY(230px);
+                                            
+                //                 }
+                //                 100%{
+                //                     transform:translateX(1440px) translateY(220px);
+                                            
+                //                 }
+                //             }
+                //         }
+                //     }
+                    
+                // }
+            }
+        }
+    }
+}

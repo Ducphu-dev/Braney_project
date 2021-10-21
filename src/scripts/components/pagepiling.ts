@@ -18,7 +18,7 @@ function createPagepiling(){
     scrollingSpeed: 600,
     css3: true,
     navigation: {
-      'position': 'left',
+      'position': 'right',
       'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']
     },
     afterRender: function() {
