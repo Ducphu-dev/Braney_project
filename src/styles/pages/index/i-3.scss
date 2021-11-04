@@ -38,7 +38,7 @@
                     background-color: map-get($color, main );
                 }
                 .nav-custom{
-                    width: 100%;
+                    // width: 100%;
                     margin: 0 -10px;
                     .swiper-container{
                         width: 100%;
@@ -61,28 +61,29 @@
                             }
                         }
                     }
-                    .nav{
-                        margin-top: 40px;
-                        display: flex;
-                        align-items: center;
-                        // width: 100%;
-                        padding: 0 10px;
-                        position: absolute;
-                        right: 0;
-                        .swiper-button-next,.swiper-button-prev{
-                            position: unset;
-                            // top: 100%;
-                            width: auto;
-                            left: unset;
-                            right: unset;
-                            margin-right: 20px;
-                            // margin-left: auto;
-                            &::after{
-                                display: none;
-                            }
-                        }
-                    }
                 }
+                //     .nav{
+                //         margin-top: 40px;
+                //         display: flex;
+                //         align-items: center;
+                //         // width: 100%;
+                //         padding: 0 10px;
+                //         position: absolute;
+                //         right: 0;
+                //         .swiper-button-next,.swiper-button-prev{
+                //             position: unset;
+                //             // top: 100%;
+                //             width: auto;
+                //             left: unset;
+                //             right: unset;
+                //             margin-right: 20px;
+                //             // margin-left: auto;
+                //             &::after{
+                //                 display: none;
+                //             }
+                //         }
+                //     }
+                // }
 
                 &_items{
                     // padding: 20px;
