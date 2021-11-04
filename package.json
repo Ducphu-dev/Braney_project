@@ -81,7 +81,7 @@
     "lazysizes": "^5.3.2",
     "pagepiling.js": "^1.5.6",
     "parallax-js": "^3.1.0",
-    "swiper": "^6.7.5"
+    "swiper": "^6.8.4"
   },
   "prettier": {
     "useTabs": true,

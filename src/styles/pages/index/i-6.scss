@@ -8,118 +8,117 @@
         &__wrapper{
             height: 100%;
             align-items: center;
-            &--process{
+            &--client{
                 &__title{
-                    @include bold;
-                    @include title(s74);
-                    margin-bottom: 30px;
+                    margin-bottom: 80px;
+                    position: relative;
+                    *{
+                        @include bold;
+                        @include title(s74);
+                    }
+                    // text{
+                    //     fill: map-get($color, black );
+                    // }
+                    &::after{
+                        position: absolute;
+                        bottom: -50%;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        content: "";
+                        background-color: map-get($color,main );
+                    }
                 }
                 &__list{
+                    margin-top: 40px;
                     width: 100%;
-                    padding-bottom: 67%;
-                    overflow-Y: scroll;
+                    padding-bottom: 40px;
                     position: relative;
-                    &::-webkit-scrollbar {
-                        display: none;
-                      }
-                    &-items{
-                        position: absolute;
-                        top: 0;
+                    .MyClient{
+                        padding-bottom: 50px;
+                    }
+                    .swiper-pagination{
+                        overflow: hidden;
                         left: 0;
-                        right: 0;
-                        bottom: 0;
-                        ol {
-                            padding-inline-start: 40px;
-                            @include size(s32);
+                        transform: unset;
+                        bottom: 5px;
+                        // width: 50px !important;
+                    }
+                    .client-items{
+                        &__decs{
+                            margin-bottom: 30px;
                             color: map-get($color, black-2 );
-                            li{
-                                .items{
-                                   
-                                    &-name{
-                                        cursor: pointer;
-                                        padding: 25px 0;
-                                        display: flex;
-                                        align-items: center;
-                                        span{
-                                            width: 18px;
-                                            height: 18px;
-                                            border-radius: 50%;
-                                            background: linear-gradient(180deg, rgba(146,214,101,1) 0%, rgba(0,67,63,1) 100%);
-                                            content: "";
-                                            transition: .2s ease-in-out;
-                                            margin-left: auto;
-                                        }
-                                        position: relative;
-                                    
-                                        &::after{
-                                            position: absolute;
-                                            top:  100%;
-                                            left: -40px;
-                                            width: calc(100% + 40px);
-                                            height: 1px;
-                                            background-color: map-get($color,main );
-                                            content: "";
-                                        }
-                                    }
-                                    &.active{
-                                        .items-name span{
-                                            width: 18px;
-                                            height: 6px;
-                                            border-radius: 10px;
-                                            // background: map-get($color, main-second );
-                                            animation: rotate .5s ease-in-out;
-                                            @keyframes rotate {
-                                                0%{
-                                                    transform:  rotate(90deg);
-                                                }
-                                                100%{
-                                                    transform:  rotate(0);
-                                                }
-                                            }
-                                        }
-                                    }
-                                    &>*{
-                                        @include size(s32);
-                                        color: map-get($color, black-2 );
-                                    }
-                                    &-infor{
-                                        padding-left: -40px;
-                                        padding: 0;
-                                        @include size(s20);
-                                        color: map-get($color, black-1 );
-                                        position: relative;
-                                        max-height: 0;
-                                        overflow: hidden;
-                                        margin-left: -40px;
-                                        transition: .6s ease-in-out;
-                                        &.active{
-                                            max-height: 300px;
-                                            overflow-Y: scroll;
-                                            &::-webkit-scrollbar {
-                                                display: none;
-                                              }
-                                        }
-                                        &>*{
-                                            padding: 30px 0;
-                                        }
-                                        &::after{
-                                            position: absolute;
-                                            top:  99%;
-                                            left: -40px;
-                                            width: calc(100% + 40px);
-                                            height: 1px;
-                                            background-color: map-get($color,main );
-                                            content: "";
-                                        }
-                                    }
-                                }
+                        }
+                        &__name{
+                            margin-top: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            color: map-get($color, main );
+                            @include size(s20);
+                            span{
+                                color: map-get($color, black-3 );
                             }
                         }
                     }
+                   
+                }
+                &__svg{
+                    svg{
+                        width:100%;
+                      }
                 }
             }
-            &--project{
-               
+            &--clientLogo{
+                margin-left: auto;
+                padding-bottom: 44%;
+                position: relative;
+                // overflow: scroll;
+                // height: 100%;
+                &__wrapper{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    // height: 100%;
+                    .MyClientLogo{
+                        width: 100%;
+                        height: 100%;
+                        // margin-left: auto;
+                        // margin-right: auto;
+                        .swiper-slide{
+                            
+                        }
+                    }
+                }
+                &_items{
+                    width: 100%;
+
+                    display: flex;
+                    align-items: center;
+                    // padding-bottom: 100%;
+                    height: 100%;
+                    .clientLogo{
+                        width: calc(100% / 3);
+                        padding: 0 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        // position: absolute;
+                        // top: 0;
+                        // bottom: 0;
+                        // left: 0;
+                        // right: 0;
+                        img{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: auto;
+                            object-fit: contain;
+                        }
+                    }
+                        
+                }
             }
         }
     }

@@ -28,6 +28,7 @@ import {pagepiling} from "./components/pagepiling";
 import {services} from "./layout/services";
 import {project} from "./layout/project";
 import {process} from "./layout/process";
+import {client} from "./layout/client";
 
 // Layout
 import aniGsap from './components/gsap';
@@ -57,6 +58,7 @@ function page(){
   // index();
   project();
   process();
+  client();
 }
 
 
@@ -92,10 +94,10 @@ document.addEventListener('DOMContentLoaded', function(){
       setVisible('#loading-container', false);
 
       var formIndexRestart = document.querySelector('.lm-home__form');
-      var strFormTmp = formIndexRestart.innerHTML;
+      // var strFormTmp = formIndexRestart.innerHTML;
 
-      formIndexRestart.innerHTML = "";
-      formIndexRestart.innerHTML = strFormTmp;
+      // formIndexRestart.innerHTML = "";
+      // formIndexRestart.innerHTML = strFormTmp;
       aniGsap.aniIdx1.restart();
     })
   });
