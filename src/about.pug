@@ -1,0 +1,15 @@
+extends _templates/_layout/_layout.pug
+
+block var
+	- let title = 'Page | About';
+	- let bodyClass = 'about-page';
+	- let indexFooter = "aboutfooter";
+	- let banner = true;
+	- let breadcrumbs = [];
+	- let navAct = 0;
+
+block main
+	div(id="aboutPage")
+		include _templates/about/page
+
+block scripts

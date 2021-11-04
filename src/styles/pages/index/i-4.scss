@@ -37,60 +37,60 @@
                     content: "";
                     background-color: map-get($color, main );
                 }
-                .nav-custom{
-                    margin: 0 -10px;
-                    .swiper-container{
-                        padding: 10px;
-                        .swiper-slide-active{
-                            .btn-see-more{
-                                @include bold;
-                                &::before{
-                                    animation: slide .3s ease-in-out 1;
-                                //    animation-direction: reverse;
-                                    width: 0;
-                                }
+                // .nav-custom{
+                //     margin: 0 -10px;
+                //     .swiper-container{
+                //         padding: 10px;
+                //         .swiper-slide-active{
+                //             .btn-see-more{
+                //                 @include bold;
+                //                 &::before{
+                //                     animation: slide .3s ease-in-out 1;
+                //                 //    animation-direction: reverse;
+                //                     width: 0;
+                //                 }
                                 
-                                svg{
-                                    opacity: 1;
-                                    left: 0;
-                                }
-                            }
-                        }
-                    }
-                    .nav{
-                        margin-top: 40px;
-                        display: flex;
-                        align-items: center;
-                        // width: 100%;
-                        // padding: 0 10px;
-                        position: absolute;
-                        right: 0;
-                        justify-content: space-between;
-                        .btn-all{
-                            display: inline-flex;
-                            position: absolute;
-                            right: 0;
-                            bottom: -100%;
-                            .btn{
-                                @include size(s24);
-                                color: map-get($color, black-3);
-                                // text-transform: capitalize;
-                            }
-                        }
-                        .swiper-button-next,.swiper-button-prev{
-                            position: unset;
-                            // top: 100%;
-                            width: auto;
-                            left: unset;
-                            right: unset;
-                            margin-left: 20px;
-                            // margin-left: auto;
-                            &::after{
-                                display: none;
-                            }
-                        }
-                    }
-                }
+                //                 svg{
+                //                     opacity: 1;
+                //                     left: 0;
+                //                 }
+                //             }
+                //         }
+                //     }
+                //     .nav{
+                //         margin-top: 40px;
+                //         display: flex;
+                //         align-items: center;
+                //         // width: 100%;
+                //         // padding: 0 10px;
+                //         position: absolute;
+                //         right: 0;
+                //         justify-content: space-between;
+                //         .btn-all{
+                //             display: inline-flex;
+                //             position: absolute;
+                //             right: 0;
+                //             bottom: -100%;
+                //             .btn{
+                //                 @include size(s24);
+                //                 color: map-get($color, black-3);
+                //                 // text-transform: capitalize;
+                //             }
+                //         }
+                //         .swiper-button-next,.swiper-button-prev{
+                //             position: unset;
+                //             // top: 100%;
+                //             width: auto;
+                //             left: unset;
+                //             right: unset;
+                //             margin-left: 20px;
+                //             // margin-left: auto;
+                //             &::after{
+                //                 display: none;
+                //             }
+                //         }
+                //     }
+                // }
 
                 &_items{
                     // padding: 20px;

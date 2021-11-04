@@ -11,6 +11,7 @@
 
 
 // component
+@import "./components/swiper";
 
 // layout
 @import "./layout/loading.scss";
@@ -18,3 +19,4 @@
 
 // page
 @import "pages/index/style";
+@import "pages/about/style";

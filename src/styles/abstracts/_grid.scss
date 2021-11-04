@@ -116,10 +116,12 @@ $tableColumn: (
 	flex-wrap: wrap;
 	margin-right: 8px;
 	margin-left: 8px;
+	width: 100%;
 
 	&.between{
 		margin-right: -8px;
 		margin-left: -8px;
+		width: calc(100% + 16px);
 	}
 
 	@each $m, $size in $media{

@@ -1,0 +1,28 @@
+#about3{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+    .about3{
+        height: 80%;
+
+        &-top{
+            display: flex;
+            flex-direction: row;
+
+            &__title{
+                &>*{
+                    @include regular;
+                }
+            }
+        }
+
+        &-swiper{
+            
+        }
+    }
+}
