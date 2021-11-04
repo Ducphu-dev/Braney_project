@@ -70,18 +70,22 @@
             }
             &--clientLogo{
                 margin-left: auto;
-                padding-bottom: 44%;
-                position: relative;
+                
+                // margin-right: -100px;
                 // overflow: scroll;
                 // height: 100%;
                 &__wrapper{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
+                    width: 100%;
+                    padding-bottom: 80%;
+                    position: relative;
+                   
                     // height: 100%;
                     .MyClientLogo{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
                         width: 100%;
                         height: 100%;
                         // margin-left: auto;
@@ -99,8 +103,11 @@
                     // padding-bottom: 100%;
                     height: 100%;
                     .clientLogo{
-                        width: calc(100% / 3);
-                        padding: 0 50px;
+                        width: calc(100% /3);
+                        height: auto;
+                        // width: 100%;
+                        padding: 0 60px;
+                        max-height: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
@@ -110,9 +117,10 @@
                         // left: 0;
                         // right: 0;
                         img{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+                            // object-fit: contain;
+                            // display: flex;
+                            // align-items: center;
+                            // justify-content: center;
                             width: auto;
                             object-fit: contain;
                         }
