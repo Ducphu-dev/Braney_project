@@ -11,10 +11,12 @@
 
 
 // component
-@import "components/swiper";
+@import "./components/swiper";
+
 // layout
 @import "./layout/loading.scss";
 @import "./layout/page-nav.scss";
 
 // page
 @import "pages/index/style";
+@import "pages/about/style";
